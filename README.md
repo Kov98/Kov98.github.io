@@ -1,72 +1,40 @@
-# KOV Web Studio — Freelance Web Developer Portfolio
+# KOV Web Studio · Freelance Web Developer
 
-A professional, responsive portfolio website created for **KOV Web Studio**, with a focus on selling straightforward websites to international small-business clients.
+Websites that help small businesses make a better first impression.
 
-## Website preview
+**[Visit the live portfolio](https://kov98.github.io/)**
 
-Open `index.html` in a browser, or publish it with GitHub Pages. The project is static: **no build process, paid service, or framework installation is required**.
+I build modern, responsive websites, landing pages and website refreshes for small businesses and independent brands. This portfolio is deliberately focused on clear presentation, easy navigation and practical front-end work, rather than SaaS products.
 
-## What's inside
+## Website concept projects
 
-- A full English-language freelance portfolio (home, services, process, about, FAQ, contact)
-- Three independent, responsive website demos to show prospective clients:
-  - **Meridian Interiors:** an editorial interior-design studio website
-  - **Solstice Coffee:** a warm, modern café website with a sample menu
-  - **Evergreen Landscapes:** a service-based website with a sample quote-request form
-- Mobile navigation, keyboard-accessible links, semantic HTML, and responsive layouts
-- Plain HTML, CSS, and JavaScript
+- [Meridian Interiors](https://kov98.github.io/demos/meridian/) — editorial website for an interior design studio.
+- [Solstice Coffee](https://kov98.github.io/demos/solstice/) — friendly neighborhood café website, including a sample menu.
+- [Evergreen Landscapes](https://kov98.github.io/demos/evergreen/) — service business website with a demonstration quote form.
 
-**Important:** These are **original portfolio concepts** for fictional companies, not paying client projects. They should remain labeled as demos until replaced or supplemented by commissioned work. No fake testimonials, client logos, sales numbers, or years of experience are claimed.
+**Important:** These three are self-initiated concepts for fictional businesses, not projects delivered to paying clients. Images are illustrative photography sourced from Unsplash. The example form does not collect or submit personal data.
 
-## Setup before publishing
+## Stack and scope
 
-1. **Add a business email address.** Edit `site-config.js` and change:
+- Semantic HTML, responsive CSS, vanilla JavaScript
+- Mobile-friendly navigation, accessible labels and simple front-end interactions
+- No framework, build tools or paid hosting required
+- GitHub Pages deployment from the repository root
 
-   ```js
-   window.KOV_CONTACT_EMAIL = 'you@yourdomain.com';
-   ```
+## Run locally
 
-   Until this value is set, the email button is hidden; GitHub remains visible. Choose an address you are comfortable making **public**. This site does not collect visitor data.
+Open `index.html` in your browser, or launch a local web server in this directory:
 
-2. **Replace details if needed.** The name shown is `KOV Web Studio`. Personalize the copy in `index.html` for your own working style, availability and capabilities.
-3. **Check all claims.** Only list services you can reliably deliver. Practice the demos before approaching clients.
-4. **Images and fonts require internet.** The site uses public Unsplash image URLs and Google Fonts CDN, with fallback colors and system fonts. If you need an offline, production-quality package, download the images with permission, optimize and serve them locally.
-5. **If the email address isn't configured, don't advertise the site as ready to take inquiries.** GitHub links alone aren't a substitute for an easy client contact channel.
-
-## Publishing
-
-See [PUBLISH.md](PUBLISH.md) for the exact GitHub Pages process and the profile README.
-
-## Contact form behavior
-
-The example quote form on the Evergreen demo is deliberately **non-submitting**. It displays an explicit preview notice. The actual portfolio uses a configurable `mailto:` link; it does not provide a backend. A real paying client would need a proper form integration or hosted submission service.
-
-## Project structure
-
-```text
-kov-web-studio/
-├── index.html
-├── style.css
-├── script.js
-├── site-config.js
-├── assets/
-│   └── favicon.svg
-├── demos/
-│   ├── demo-shared.css
-│   ├── demo-shared.js
-│   ├── meridian/index.html
-│   ├── solstice/index.html
-│   └── evergreen/index.html
-├── README.md
-├── PUBLISH.md
-├── GITHUB_PROFILE_README.md
-└── LINKEDIN_PROFILE.md
+```bash
+python -m http.server 8000
 ```
 
-## Visual asset licensing
+Then open `http://localhost:8000/`.
 
-Demo photos are referenced remotely from **Unsplash**. Unsplash's license permits images to be used in commercial and noncommercial websites, with some restrictions. See https://unsplash.com/license and review rights before adapting for real clients. Avoid claiming that depicted work belongs to the fictional demo businesses. The demos contain illustrative stock photography, not actual studio/café/garden client work.
+## Before inviting clients to contact you
 
-## Copyright
+The website email CTA is hidden until a business email is set in `site-config.js`. Add a suitable public email there, then commit the change. GitHub Pages also needs to be enabled in **Settings → Pages → Deploy from a branch → main → /(root)**.
 
-Custom website code and copy created for this portfolio. Photos remain under their respective owners' licenses.
+---
+
+© KOV Web Studio · [GitHub](https://github.com/Kov98) · [Portfolio](https://kov98.github.io/)
